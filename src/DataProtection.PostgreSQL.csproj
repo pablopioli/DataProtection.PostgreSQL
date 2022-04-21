@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>DataProtection.PostgreSQL</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Pablo Pioli</Authors>
+		<Product>DataProtection.PostgreSQL</Product>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/pablopioli/DataProtection.PostgreSQL</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/pablopioli/DataProtection.PostgreSQL</RepositoryUrl>
+		<Description>An implementation of .NET Data Protection using a PostgreSQL backend </Description>
+		<Version>1.0.0</Version>
+		<PackageId>PPioli.DataProtection.PostgreSQL</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="6.0.0" />
+		<PackageReference Include="Npgsql" Version="6.0.0" />
+		<PackageReference Include="postgres-schema-updater" Version="3.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
